@@ -13,3 +13,9 @@ config_version=5
 config/name="Godot Arcade Cabinet"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[file_customization]
+
+folder_colors={
+"res://ui/": "yellow"
+}
