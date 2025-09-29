@@ -1,3 +1,242 @@
-[gd_scene format=3 uid="uid://f7oyc8x4wpoh"]
+[gd_scene load_steps=14 format=3 uid="uid://f7oyc8x4wpoh"]
+
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="1_jya1s"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_uq1aw"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="2_uq1aw"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uq1aw"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_a6fgm"]
+sky_material = SubResource("ProceduralSkyMaterial_uq1aw")
+
+[sub_resource type="Environment" id="Environment_v6nrp"]
+background_mode = 2
+sky = SubResource("Sky_a6fgm")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="Resource" id="Resource_a6fgm"]
+script = ExtResource("2_uq1aw")
+transition = 3
+ease = 0
+
+[sub_resource type="Animation" id="Animation_uq1aw"]
+resource_name = "Move follow"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node3D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 34.5, -0.6160719, 19.72804, 0.8743906, -28, -58.5, -0.55258894, -1.5615954, 0.7077236, 2, 0, -0.4256096, -64.5, 0, 0),
+"times": PackedFloat32Array(0, 4.0666666, 7.366667, 10)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node3D:position:z")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.23333333, -2.5, -77.5, -1.2024868, 30, 1.2577068, -31.377647, -171.1411, -0.55294144, -5.6569753, 2.2130556, 22.641098, 0, -0.6333332, -14.5, 0, 0),
+"times": PackedFloat32Array(0, 5.133333, 7.353611, 10)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node3D2:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2),
+"points": PackedFloat32Array(-4.009332, -0.25, 0, 0.25, 0, -7.7223296, -0.44077405, 0.61883295, 0, 0, 13.809551, -0.6607374, 0, 0.56515527, 0, -23.5, -0.4922762, 2, 0.44227996, -1.7968774, -7.7223296, -1.2258927, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.6446443, 6.6090684, 8.433333, 10)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node3D2:position:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -31.167347, -0.2369206, 11.667347, 0, 0, -127.21683, -0.6133133, -18.175554, 0.6653218, 19.716827, -112.36069, -0.41734123, 10.860687, 0.66924953, -17.416227, -0.15810776, -0.55894375, -68.34189, 0, 0),
+"times": PackedFloat32Array(0, 2.6446443, 6.6090684, 8.525064, 10)
+}
+
+[sub_resource type="Animation" id="Animation_a6fgm"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node3D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node3D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node3D:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node3D2:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-4.009332, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node3D2:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node3D2:position:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v6nrp"]
+_data = {
+&"Move follow": SubResource("Animation_uq1aw"),
+&"RESET": SubResource("Animation_a6fgm")
+}
+
+[sub_resource type="Curve3D" id="Curve3D_rsbl5"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, -3.975, 0, 0.385, -3.3895588, 0, 0, 0, 0, 14.215, 0, 0, -29.4, 4.4017544, 0, -75.109, 0, 0, 0, 0, 0, 0, -12.048756, -1.5258789e-05, -153.92267),
+"tilts": PackedFloat32Array(0, 0, 0)
+}
+point_count = 3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rsbl5"]
+albedo_color = Color(0.14044744, 0.14044744, 0.14044744, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uq1aw"]
+albedo_color = Color(0.5508831, 0.453741, 0.21912807, 1)
 
 [node name="PlayGround" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_v6nrp")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.9351337, -0.15578204, 0.31820887, -4.569441e-05, 0.89819974, 0.43958753, -0.35429496, 0.4110586, -0.839944, -12.048756, 6.849701, -155.58328)
+
+[node name="PhantomCameraHost" type="Node" parent="Camera3D"]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("1_uq1aw")
+metadata/_custom_type_script = "uid://bd046eokvcnu2"
+
+[node name="PhantomCamera3D" type="Node3D" parent="." node_paths=PackedStringArray("follow_target", "follow_targets", "follow_path", "look_at_targets")]
+transform = Transform3D(-0.93513256, -0.15576404, 0.31820878, -4.5694356e-05, 0.89809597, 0.4395874, -0.35429454, 0.41101113, -0.83994377, -12.048756, 6.849701, -155.58328)
+top_level = true
+script = ExtResource("1_jya1s")
+follow_mode = 4
+follow_target = NodePath("../Node3D")
+follow_targets = [NodePath("../Node3D"), NodePath("../Node3D2")]
+follow_path = NodePath("../Path3D")
+look_at_mode = 3
+look_at_targets = [NodePath("../Node3D"), NodePath("../Node3D2")]
+tween_resource = SubResource("Resource_a6fgm")
+tween_on_load = false
+follow_damping = true
+follow_axis_lock = 7
+follow_distance = 10.0
+auto_follow_distance = true
+auto_follow_distance_min = 10.0
+auto_follow_distance_max = 20.0
+dead_zone_width = 0.28
+dead_zone_height = 0.235
+spring_length = 10.0
+look_at_offset = Vector3(0, -2, 0)
+look_at_damping = true
+look_at_damping_value = 0.03
+metadata/_custom_type_script = "uid://csjccrhj5wnx7"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+&"": SubResource("AnimationLibrary_v6nrp")
+}
+playback_auto_capture = false
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.98571, 0, -155.74054)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Node3D"]
+use_collision = true
+
+[node name="Node3D2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.637342, 0, -122.02269)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Node3D2"]
+use_collision = true
+
+[node name="Path3D" type="Path3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.849716, -1.6606102)
+curve = SubResource("Curve3D_rsbl5")
+debug_custom_color = Color(0.9026389, 0.5497725, 0.8417086, 1)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6546631, -2.150379, -42.7489)
+material_override = SubResource("StandardMaterial3D_rsbl5")
+size = Vector3(197.69067, 0.001, 305.47778)
+metadata/_edit_lock_ = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5348778, -2.0996037, -42.7489)
+material_override = SubResource("StandardMaterial3D_uq1aw")
+size = Vector3(0.6258087, 0.10255078, 305.47778)
+metadata/_edit_lock_ = true
