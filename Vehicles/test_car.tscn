@@ -1,0 +1,79 @@
+[gd_scene load_steps=7 format=3 uid="uid://3hc0bhetxdj8"]
+
+[ext_resource type="Script" uid="uid://dh5a2it2hfjcu" path="res://Vehicles/test_car.gd" id="1_7v6xn"]
+[ext_resource type="PackedScene" uid="uid://drci8sffatamp" path="res://assets/imported/sm_car_racer1.fbx" id="1_f4f80"]
+[ext_resource type="AudioStream" uid="uid://cxmxivkjy2hdb" path="res://Vehicles/engine.wav" id="3_rbwsu"]
+[ext_resource type="PackedScene" uid="uid://c8fnogjxe78vy" path="res://assets/imported/sm_tire.fbx" id="4_8v1rf"]
+[ext_resource type="Script" uid="uid://hvimk81v8h8u" path="res://Vehicles/follow_cam.gd" id="5_mmqwp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mmqwp"]
+size = Vector3(0.8725891, 1, 3.7644653)
+
+[node name="TestCar" type="Node3D"]
+
+[node name="Body" type="VehicleBody3D" parent="."]
+script = ExtResource("1_7v6xn")
+
+[node name="sm_car_racer1" parent="Body" instance=ExtResource("1_f4f80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2245434, 0)
+
+[node name="EngineSound" type="AudioStreamPlayer" parent="Body"]
+stream = ExtResource("3_rbwsu")
+
+[node name="ImpactSound" type="AudioStreamPlayer" parent="Body"]
+stream = ExtResource("3_rbwsu")
+volume_db = -80.0
+
+[node name="Wheel_PS_Front" type="VehicleWheel3D" parent="Body"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.63649404, -0.45538315, -1.232641)
+use_as_traction = true
+use_as_steering = true
+wheel_radius = 0.3
+wheel_friction_slip = 1.0
+suspension_travel = 2.0
+suspension_stiffness = 40.0
+
+[node name="Wheel1" parent="Body/Wheel_PS_Front" instance=ExtResource("4_8v1rf")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1.5745075, 0, 0, 0, 1.6355104, 0.07657856, -0.012213081, 0.016083598)
+
+[node name="Wheel_DS_Front" type="VehicleWheel3D" parent="Body"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.5257411, -0.45538315, -1.232641)
+use_as_traction = true
+use_as_steering = true
+wheel_radius = 0.3
+wheel_friction_slip = 1.0
+suspension_travel = 2.0
+suspension_stiffness = 40.0
+
+[node name="sm_tire" parent="Body/Wheel_DS_Front" instance=ExtResource("4_8v1rf")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1.5745075, 0, 0, 0, 1.6355104, 0.07657856, -0.012213081, 0.016083598)
+
+[node name="Wheel_DS_Rear" type="VehicleWheel3D" parent="Body"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.5257411, -0.45538315, 1.181618)
+use_as_traction = true
+wheel_radius = 0.3
+wheel_friction_slip = 1.0
+suspension_travel = 2.0
+suspension_stiffness = 40.0
+
+[node name="sm_tire" parent="Body/Wheel_DS_Rear" instance=ExtResource("4_8v1rf")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1.5745075, 0, 0, 0, 1.6355104, 0.07657856, -0.012213081, 0.016083598)
+
+[node name="Wheel_PS_Rear" type="VehicleWheel3D" parent="Body"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.6243601, -0.45538315, 1.181618)
+use_as_traction = true
+wheel_radius = 0.3
+wheel_friction_slip = 1.0
+suspension_travel = 2.0
+suspension_stiffness = 40.0
+
+[node name="sm_tire" parent="Body/Wheel_PS_Rear" instance=ExtResource("4_8v1rf")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1.5745075, 0, 0, 0, 1.6355104, 0.07657856, -0.012213081, 0.016083598)
+
+[node name="Camera3D" type="Camera3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 2.9802322e-08, 0, -2.9802322e-08, 1, 0, 2, 6)
+script = ExtResource("5_mmqwp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011886597, -0.18849099, 0.14102173)
+shape = SubResource("BoxShape3D_mmqwp")

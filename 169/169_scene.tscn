@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwxilhhai4ddx"]
+
+[ext_resource type="PackedScene" uid="uid://blc31mskvbeo6" path="res://169/sm_test_street_1.tscn" id="1_3840f"]
+[ext_resource type="PackedScene" uid="uid://3hc0bhetxdj8" path="res://Vehicles/test_car.tscn" id="2_bmtat"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="sm_test_street1" parent="." instance=ExtResource("1_3840f")]
+
+[node name="sm_test_street2" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="sm_test_street5" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 0)
+
+[node name="sm_test_street3" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="sm_test_street4" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+
+[node name="TestCar" parent="." instance=ExtResource("2_bmtat")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -9, 1.1676185, 1)
