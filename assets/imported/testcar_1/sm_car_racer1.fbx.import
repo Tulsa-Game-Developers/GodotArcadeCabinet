@@ -3,17 +3,17 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://csi1dd6eq21f0"
-path="res://.godot/imported/sm_test_street1.fbx-199cd8e13181ddb478bfe68e05a61442.scn"
+uid="uid://drci8sffatamp"
+path="res://.godot/imported/sm_car_racer1.fbx-1b54c88dd87d833775547909a859f97b.scn"
 
 [deps]
 
-source_file="res://assets/imported/sm_test_street1.fbx"
-dest_files=["res://.godot/imported/sm_test_street1.fbx-199cd8e13181ddb478bfe68e05a61442.scn"]
+source_file="res://assets/imported/testcar_1/sm_car_racer1.fbx"
+dest_files=["res://.godot/imported/sm_car_racer1.fbx-1b54c88dd87d833775547909a859f97b.scn"]
 
 [params]
 
-nodes/root_type="StaticBody3D"
+nodes/root_type="MeshInstance3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

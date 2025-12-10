@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://3hc0bhetxdj8"]
 
 [ext_resource type="Script" uid="uid://dh5a2it2hfjcu" path="res://Vehicles/test_car.gd" id="1_7v6xn"]
-[ext_resource type="PackedScene" uid="uid://drci8sffatamp" path="res://assets/imported/sm_car_racer1.fbx" id="1_f4f80"]
+[ext_resource type="PackedScene" uid="uid://drci8sffatamp" path="res://assets/imported/testcar_1/sm_car_racer1.fbx" id="1_f4f80"]
 [ext_resource type="AudioStream" uid="uid://cxmxivkjy2hdb" path="res://Vehicles/engine.wav" id="3_rbwsu"]
-[ext_resource type="PackedScene" uid="uid://c8fnogjxe78vy" path="res://assets/imported/sm_tire.fbx" id="4_8v1rf"]
+[ext_resource type="PackedScene" uid="uid://c8fnogjxe78vy" path="res://assets/imported/testcar_1/sm_tire.fbx" id="4_8v1rf"]
 [ext_resource type="Script" uid="uid://hvimk81v8h8u" path="res://Vehicles/follow_cam.gd" id="5_mmqwp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mmqwp"]

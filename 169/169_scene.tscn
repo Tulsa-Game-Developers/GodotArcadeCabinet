@@ -1,23 +1,300 @@
 [gd_scene load_steps=3 format=3 uid="uid://cwxilhhai4ddx"]
 
 [ext_resource type="PackedScene" uid="uid://blc31mskvbeo6" path="res://169/sm_test_street_1.tscn" id="1_3840f"]
-[ext_resource type="PackedScene" uid="uid://3hc0bhetxdj8" path="res://Vehicles/test_car.tscn" id="2_bmtat"]
+[ext_resource type="PackedScene" uid="uid://dow2syqs1mepn" path="res://Vehicles/simple_car.tscn" id="2_bmtat"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="sm_test_street1" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.280092, 0, 0)
 
 [node name="sm_test_street2" parent="." instance=ExtResource("1_3840f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
-
-[node name="sm_test_street5" parent="." instance=ExtResource("1_3840f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.280092, 0, -16)
 
 [node name="sm_test_street3" parent="." instance=ExtResource("1_3840f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28009224, 0, 0)
 
 [node name="sm_test_street4" parent="." instance=ExtResource("1_3840f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7199078, 0, -16)
 
-[node name="TestCar" parent="." instance=ExtResource("2_bmtat")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -9, 1.1676185, 1)
+[node name="sm_test_street5" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.719908, 0, -16)
+
+[node name="sm_test_street6" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.719908, 0, -16)
+
+[node name="sm_test_street7" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.280092, 0, 8)
+
+[node name="sm_test_street8" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.280092, 0, 8)
+
+[node name="sm_test_street9" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.28009224, 0, 8)
+
+[node name="sm_test_street10" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 7.7199078, 0, 8)
+
+[node name="sm_test_street11" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 15.719908, 0, 8)
+
+[node name="sm_test_street12" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.719908, 0, 8)
+
+[node name="sm_test_street13" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.280092, 0, -24)
+
+[node name="sm_test_street14" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.280092, 0, -24)
+
+[node name="sm_test_street15" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.28009224, 0, -24)
+
+[node name="sm_test_street16" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 7.7199078, 0, -8)
+
+[node name="sm_test_street17" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 15.719908, 0, -24)
+
+[node name="sm_test_street18" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.719908, 0, -8)
+
+[node name="sm_test_street19" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.280092, 0, -16)
+
+[node name="sm_test_street20" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.280092, 0, 0)
+
+[node name="sm_test_street21" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28009224, 0, -16)
+
+[node name="sm_test_street22" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7199078, 0, 0)
+
+[node name="sm_test_street23" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.719908, 0, 0)
+
+[node name="sm_test_street24" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.719908, 0, 0)
+
+[node name="sm_test_street25" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.280092, 0, 8)
+
+[node name="sm_test_street26" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.280092, 0, 8)
+
+[node name="sm_test_street27" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.28009224, 0, 8)
+
+[node name="sm_test_street28" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 7.7199078, 0, 8)
+
+[node name="sm_test_street29" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 15.719908, 0, 8)
+
+[node name="sm_test_street30" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.719908, 0, 8)
+
+[node name="sm_test_street31" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.280092, 0, -8)
+
+[node name="sm_test_street32" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.280092, 0, -8)
+
+[node name="sm_test_street33" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.28009224, 0, -8)
+
+[node name="sm_test_street34" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 7.7199078, 0, -24)
+
+[node name="sm_test_street35" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 15.719908, 0, -8)
+
+[node name="sm_test_street36" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.719908, 0, -24)
+
+[node name="sm_test_street37" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.280092, 0, -32)
+
+[node name="sm_test_street38" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7199078, 0, -32)
+
+[node name="sm_test_street39" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.719908, 0, -32)
+
+[node name="sm_test_street40" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.719908, 0, -32)
+
+[node name="sm_test_street41" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.280092, 0, -40)
+
+[node name="sm_test_street42" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.280092, 0, -40)
+
+[node name="sm_test_street43" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.28009224, 0, -40)
+
+[node name="sm_test_street44" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 15.719908, 0, -40)
+
+[node name="sm_test_street45" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.280092, 0, -32)
+
+[node name="sm_test_street46" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28009224, 0, -32)
+
+[node name="sm_test_street47" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 7.7199078, 0, -40)
+
+[node name="sm_test_street48" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.719908, 0, -40)
+
+[node name="sm_test_street49" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.719908, 0, 0)
+
+[node name="sm_test_street50" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.71991, 0, -16)
+
+[node name="sm_test_street51" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.71991, 0, 0)
+
+[node name="sm_test_street52" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.71991, 0, -16)
+
+[node name="sm_test_street53" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.71991, 0, -16)
+
+[node name="sm_test_street54" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.71991, 0, -16)
+
+[node name="sm_test_street55" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 31.719908, 0, 8)
+
+[node name="sm_test_street56" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.71991, 0, 8)
+
+[node name="sm_test_street57" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 47.71991, 0, 8)
+
+[node name="sm_test_street58" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 55.71991, 0, 8)
+
+[node name="sm_test_street59" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 63.71991, 0, 8)
+
+[node name="sm_test_street60" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 71.71991, 0, 8)
+
+[node name="sm_test_street61" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 31.719908, 0, -24)
+
+[node name="sm_test_street62" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.71991, 0, -24)
+
+[node name="sm_test_street63" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 47.71991, 0, -24)
+
+[node name="sm_test_street64" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 55.71991, 0, -8)
+
+[node name="sm_test_street65" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 63.71991, 0, -24)
+
+[node name="sm_test_street66" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 71.71991, 0, -8)
+
+[node name="sm_test_street67" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.719908, 0, -16)
+
+[node name="sm_test_street68" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.71991, 0, 0)
+
+[node name="sm_test_street69" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.71991, 0, -16)
+
+[node name="sm_test_street70" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.71991, 0, 0)
+
+[node name="sm_test_street71" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.71991, 0, 0)
+
+[node name="sm_test_street72" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.71991, 0, 0)
+
+[node name="sm_test_street73" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 31.719908, 0, 8)
+
+[node name="sm_test_street74" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.71991, 0, 8)
+
+[node name="sm_test_street75" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 47.71991, 0, 8)
+
+[node name="sm_test_street76" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 55.71991, 0, 8)
+
+[node name="sm_test_street77" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 63.71991, 0, 8)
+
+[node name="sm_test_street78" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 71.71991, 0, 8)
+
+[node name="sm_test_street79" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 31.719908, 0, -8)
+
+[node name="sm_test_street80" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.71991, 0, -8)
+
+[node name="sm_test_street81" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 47.71991, 0, -8)
+
+[node name="sm_test_street82" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 55.71991, 0, -24)
+
+[node name="sm_test_street83" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 63.71991, 0, -8)
+
+[node name="sm_test_street84" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 71.71991, 0, -24)
+
+[node name="sm_test_street85" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.71991, 0, -32)
+
+[node name="sm_test_street86" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.71991, 0, -32)
+
+[node name="sm_test_street87" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.71991, 0, -32)
+
+[node name="sm_test_street88" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.71991, 0, -32)
+
+[node name="sm_test_street89" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 31.719908, 0, -40)
+
+[node name="sm_test_street90" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.71991, 0, -40)
+
+[node name="sm_test_street91" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 47.71991, 0, -40)
+
+[node name="sm_test_street92" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 63.71991, 0, -40)
+
+[node name="sm_test_street93" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.719908, 0, -32)
+
+[node name="sm_test_street94" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.71991, 0, -32)
+
+[node name="sm_test_street95" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 55.71991, 0, -40)
+
+[node name="sm_test_street96" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 71.71991, 0, -40)
+
+[node name="SimpleCar" parent="." instance=ExtResource("2_bmtat")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -16.121689, 0.8284867, 1.1822418)
+
+[node name="Camera3D" type="Camera3D" parent="SimpleCar"]
+transform = Transform3D(1, -1.2679256e-08, -1.8793145e-09, 1.2679258e-08, 0.9570062, 0.2900676, -1.8793216e-09, -0.2900676, 0.95700634, 1.1920929e-06, 4.205406, 6.758116)

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dow2syqs1mepn"]
+
+[ext_resource type="Script" uid="uid://d0mgsn71e816l" path="res://Vehicles/simple_car.gd" id="1_4ar5p"]
+[ext_resource type="PackedScene" uid="uid://drci8sffatamp" path="res://assets/imported/testcar_1/sm_car_racer1.fbx" id="1_c7buc"]
+[ext_resource type="PackedScene" uid="uid://c8fnogjxe78vy" path="res://assets/imported/testcar_1/sm_tire.fbx" id="2_4ar5p"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5k4ya"]
+radius = 0.6044922
+height = 3.9831543
+
+[node name="SimpleCar" type="CharacterBody3D"]
+script = ExtResource("1_4ar5p")
+
+[node name="sm_car_racer1" parent="." instance=ExtResource("1_c7buc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.021733642, 0.48072815)
+
+[node name="sm_tire" parent="sm_car_racer1" instance=ExtResource("2_4ar5p")]
+transform = Transform3D(1.2454578, 0, 0, 0, 1.2454578, 0, 0, 0, 1.2454578, 0.5571386, -0.262289, -1.2343416)
+
+[node name="sm_tire2" parent="sm_car_racer1" instance=ExtResource("2_4ar5p")]
+transform = Transform3D(1.2454578, 0, 0, 0, 1.2454578, 0, 0, 0, 1.2454578, 0.5571386, -0.262289, 1.1400845)
+
+[node name="sm_tire3" parent="sm_car_racer1" instance=ExtResource("2_4ar5p")]
+transform = Transform3D(1.2454578, 0, 0, 0, 1.2454578, 0, 0, 0, 1.2454578, -0.52285606, -0.262289, -1.2343416)
+
+[node name="sm_tire4" parent="sm_car_racer1" instance=ExtResource("2_4ar5p")]
+transform = Transform3D(1.2454578, 0, 0, 0, 1.2454578, 0, 0, 0, 1.2454578, -0.52285606, -0.262289, 1.1400845)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.11402935, 0.5797272)
+shape = SubResource("CapsuleShape3D_5k4ya")

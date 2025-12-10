@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hiu22jqpisko"
-path.s3tc="res://.godot/imported/t_tire1.png-8d8a9cab33c185c8ca46fd1af5673c3a.s3tc.ctex"
+path.s3tc="res://.godot/imported/t_tire1.png-75a1b669bd9327c3793a3e157a0a220d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/imported/t_tire1.png"
-dest_files=["res://.godot/imported/t_tire1.png-8d8a9cab33c185c8ca46fd1af5673c3a.s3tc.ctex"]
+source_file="res://assets/imported/testcar_1/t_tire1.png"
+dest_files=["res://.godot/imported/t_tire1.png-75a1b669bd9327c3793a3e157a0a220d.s3tc.ctex"]
 
 [params]
 

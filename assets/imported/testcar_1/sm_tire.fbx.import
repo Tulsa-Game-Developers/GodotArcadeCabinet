@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c8fnogjxe78vy"
-path="res://.godot/imported/sm_tire.fbx-fb9b6c45753355c0788767fee4e24f88.scn"
+path="res://.godot/imported/sm_tire.fbx-026a1e356b5f129c08f03e21c4041f35.scn"
 
 [deps]
 
-source_file="res://assets/imported/sm_tire.fbx"
-dest_files=["res://.godot/imported/sm_tire.fbx-fb9b6c45753355c0788767fee4e24f88.scn"]
+source_file="res://assets/imported/testcar_1/sm_tire.fbx"
+dest_files=["res://.godot/imported/sm_tire.fbx-026a1e356b5f129c08f03e21c4041f35.scn"]
 
 [params]
 
