@@ -20,10 +20,9 @@ adjustment_saturation = 1.38
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_bmtat"]
 exposure_multiplier = 0.925
-dof_blur_far_enabled = true
 dof_blur_far_distance = 4.16
 dof_blur_far_transition = 50.0
-dof_blur_amount = 0.02
+dof_blur_amount = 0.0
 
 [node name="Node3D" type="Node3D"]
 
