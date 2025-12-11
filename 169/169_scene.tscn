@@ -1,7 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://cwxilhhai4ddx"]
+[gd_scene load_steps=5 format=3 uid="uid://cwxilhhai4ddx"]
 
 [ext_resource type="PackedScene" uid="uid://blc31mskvbeo6" path="res://169/sm_test_street_1.tscn" id="1_3840f"]
 [ext_resource type="PackedScene" uid="uid://dow2syqs1mepn" path="res://Vehicles/simple_car.tscn" id="2_bmtat"]
+
+[sub_resource type="Environment" id="Environment_bmtat"]
+tonemap_mode = 4
+glow_normalized = true
+fog_mode = 1
+fog_light_color = Color(0.5690364, 0.6402487, 0.98398453, 1)
+fog_light_energy = 1.76
+fog_sun_scatter = 0.22
+fog_density = 0.6792
+fog_height = -908.08
+fog_height_density = 4.2264
+adjustment_enabled = true
+adjustment_brightness = 1.23
+adjustment_contrast = 2.06
+adjustment_saturation = 1.38
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_bmtat"]
+exposure_multiplier = 0.925
+dof_blur_far_enabled = true
+dof_blur_far_distance = 4.16
+dof_blur_far_transition = 50.0
+dof_blur_amount = 0.02
 
 [node name="Node3D" type="Node3D"]
 
@@ -100,6 +122,24 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.
 
 [node name="sm_test_street32" parent="." instance=ExtResource("1_3840f")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.280092, 0, -8)
+
+[node name="sm_test_street97" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 20.592001, 0, -1, 0, -4.371139e-08, -8.280092, 5, -8)
+
+[node name="sm_test_street98" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 20.592001, 0, -1, 0, -4.371139e-08, 12.719908, 5, -16)
+
+[node name="sm_test_street102" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 20.592001, 0, -1, 0, -4.371139e-08, -4.2800922, 5, -41)
+
+[node name="sm_test_street99" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 20.592001, 0, -1, 0, -4.371139e-08, 38.71991, 5, 7)
+
+[node name="sm_test_street100" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 20.592001, 0, -1, 0, -4.371139e-08, 45.71991, 5, -19)
+
+[node name="sm_test_street101" parent="." instance=ExtResource("1_3840f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 20.592001, 0, -1, 0, -4.371139e-08, 61.71991, 5, 1)
 
 [node name="sm_test_street33" parent="." instance=ExtResource("1_3840f")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.28009224, 0, -8)
@@ -298,3 +338,14 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -16.
 
 [node name="Camera3D" type="Camera3D" parent="SimpleCar"]
 transform = Transform3D(1, -1.2679256e-08, -1.8793145e-09, 1.2679258e-08, 0.9570062, 0.2900676, -1.8793216e-09, -0.2900676, 0.95700634, 1.1920929e-06, 4.205406, 6.758116)
+fov = 85.2
+near = 0.001
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.7071067, 0.5000001, -0.5000001, 0, 0.7071068, 0.7071068, 0.7071068, -0.50000006, 0.50000006, 0, 12, 0)
+light_energy = 2.018
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DirectionalLight3D"]
+environment = SubResource("Environment_bmtat")
+camera_attributes = SubResource("CameraAttributesPractical_bmtat")
